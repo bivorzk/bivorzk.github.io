@@ -30,7 +30,7 @@ async function updateRainDisplay() {
     const isRaining = await getRainData(url);
     
     if (isRaining !== undefined) {
-      document.getElementById("raincheck").innerHTML = isRaining ? "Igen" : "Nem";
+      document.getElementById("raincheck").innerHTML = isRaining ? "Igen (Pityu)" : "Nem (Ferenc)";
     } else {
       document.getElementById("raincheck").innerHTML = "Nem elerheto az adat.";
     }
